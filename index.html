@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+  <html>
+   <head>
+    <meta name="viewport" content="width=device-width, initial scale=1"  charset="UTF-8">
+    <title>Кінозал</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+       <script defer type="module" src="scripts/app.js"></script>
+  </head>
+  
+  <body>
+    <div class="contain">
+    <header class="header">
+  	<h1 class="header__title"></h1>
+  </header> 
+  <nav class="sort" id="sort">
+    <div class="burger" onclick="toggleMobileMenu()">
+      <div class="burger__bar"></div>
+      <div class="burger__bar"></div>
+      <div class="burger__bar"></div>
+    </div>
+  	<span class="sort__label">Сортувати за:</span>
+
+  </nav>
+  <aside class="sidebar"></aside> 
+  
+  <main class="content" id="content"></main>
+ 
+    <footer class="footer">
+      <p>KYIV 2022</p>
+    </footer>
+  </div>
+<script type="text/javascript">
+  const nav = document.getElementById('sort');
+
+  function toggleMobileMenu() {
+    nav.classList.toggle('open');
+  }
+</script>
+  </body>
+</html>
